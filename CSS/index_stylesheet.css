@@ -1,0 +1,78 @@
+body{  font-family: 'Signika', sans-serif;
+    background-color:  rgb(156, 10, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 20vh;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.home_logo{
+    flex:1;
+    display: flex;
+    justify-content:center;
+    order:1;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    order: 2;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+nav li {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+nav a:hover{
+    color: rgb(255,200,200);
+}
+
+
+nav a:hover{
+color: rgb(255,200,200);}
+
+nav a::before{
+    content: " ";
+    display: block;
+    height: 5px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    top:0px;
+    width: 0%;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
